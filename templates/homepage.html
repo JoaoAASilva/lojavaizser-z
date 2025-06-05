@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaizser Z - Roupas e Sapatos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .produto img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .produto h3 {
+            margin: 10px 0 5px;
+        }
+
+        .produto p {
+            margin: 0;
+            color: #555;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catálogo - Vaizser Z</h1>
+    <p>Confira nossas roupas e calçados da nova coleção</p>
+</header>
+
+<section class="produtos">
+    <div class="produto">
+        <img src="https://source.unsplash.com/300x250/?tshirt" alt="Camiseta">
+        <h3>Camiseta Slim Fit</h3>
+        <p>R$ 59,90</p>
+    </div>
+    <div class="produto">
+        <img src="https://source.unsplash.com/300x250/?sneakers" alt="Tênis">
+        <h3>Tênis Esportivo</h3>
+        <p>R$ 199,90</p>
+    </div>
+    <div class="produto">
+        <img src="https://source.unsplash.com/300x250/?jeans" alt="Calça Jeans">
+        <h3>Calça Jeans Masculina</h3>
+        <p>R$ 129,90</p>
+    </div>
+    <div class="produto">
+        <img src="https://source.unsplash.com/300x250/?heels" alt="Sapato salto">
+        <h3>Sapato de Salto</h3>
+        <p>R$ 159,90</p>
+    </div>
+    <div class="produto">
+        <img src="https://source.unsplash.com/300x250/?jacket" alt="Jaqueta">
+        <h3>Jaqueta de Couro</h3>
+        <p>R$ 219,90</p>
+    </div>
+    <div class="produto">
+        <img src="https://source.unsplash.com/300x250/?boots" alt="Bota">
+        <h3>Bota Casual</h3>
+        <p>R$ 179,90</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Vaizser Z. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
