@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog - Vaizser Z</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .post {
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .post img {
+      width: 100%;
+      height: auto;
+    }
+
+    .post-content {
+      padding: 20px;
+    }
+
+    .post h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .post p {
+      color: #555;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .read-more:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog da Vaizser Z</h1>
+    <p>Fique por dentro das novidades do mundo da moda esportiva e casual</p>
+  </header>
+
+  <div class="container">
+    <div class="post">
+      <img src="{{ url_for('static', filename='img/roupa1.jpg') }}" alt="Roupa 1">
+      <div class="post-content">
+        <h2>Tendências de camisetas de basquete 2025</h2>
+        <p>Confira os modelos mais estilosos que chegaram com tudo nas quadras e nas ruas neste ano!</p>
+        <a class="read-more" href="#">Ler mais</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="{{ url_for('static', filename='img/tenis1.jpg') }}" alt="Tênis esportivo">
+      <div class="post-content">
+        <h2>Top 10 tênis esportivos para corrida e treino</h2>
+        <p>Conforto, leveza e estilo: veja nossa seleção com os melhores tênis do momento.</p>
+        <a class="read-more" href="#">Ler mais</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="{{ url_for('static', filename='img/moletom1.jpg') }}" alt="Moletom esportivo">
+      <div class="post-content">
+        <h2>Moletom é tendência no streetwear!</h2>
+        <p>Descubra como combinar conforto e estilo com conjuntos de moletom incríveis.</p>
+        <a class="read-more" href="#">Ler mais</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
