@@ -1,114 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo de Produtos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vaizser Z – Moda & Esporte</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      background-color: #111;
-      color: #fff;
-      padding: 10px;
-    }
-    .produtos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    .produto {
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 10px;
-      width: 220px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .produto span {
-      display: block;
-      margin-top: 8px;
-      font-weight: bold;
-      color: green;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #222; color: #fff; padding: 1rem; text-align: center; }
+    .container { padding: 2rem; }
+    h2 { margin-top: 2rem; border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
+    .produtos { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-around; }
+    .produto { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; width: 300px; text-align: center; }
+    .produto img { max-width: 100%; height:auto; border-radius: 4px; }
+    .produto h3 { margin: .5rem 0; }
+    .produto p { margin: .5rem 0; color: #555; }
+    .produto a { display:inline-block; margin-top:.5rem; padding:.5rem 1rem; background:#222; color:#fff; text-decoration:none; border-radius:4px; }
+    .avaliacoes { margin-top:2rem; }
+    .avaliacao { border-top:1px solid #eee; padding:1rem 0; }
+    .avaliacao:first-child { border-top:none; }
+    .parcerias { margin-top:2rem; text-align:center; }
+    .parcerias img { width:100px; margin:0 1rem; vertical-align:middle; }
+    footer { background:#f4f4f4; text-align:center; padding:1rem; margin-top:2rem; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Vaizser Z</h1>
+    <p>Moda e Esporte em um só lugar</p>
+  </header>
 
-  <h1>Catálogo de Produtos</h1>
-
-  <!-- Categoria: Esporte -->
-  <section>
-    <h2>Categoria: Esporte</h2>
+  <div class="container">
+    <!-- Produtos -->
+    <h2>Tênis de Basquete</h2>
     <div class="produtos">
-      <div class="produto">12 Camisetas de Basquete <span>R$300,00</span></div>
-      <div class="produto">12 Blusas de Futebol <span>R$300,00</span></div>
-      <div class="produto">12 Blusas de Futebol Americano <span>R$350,00</span></div>
-      <div class="produto">12 Blusas Dri FT <span>R$250,00</span></div>
-      <div class="produto">12 Camisetas Esportivas <span>R$400,00</span></div>
-      <div class="produto">12 Bermudas <span>R$150,00</span></div>
-      <div class="produto">12 Bermudas de Futebol <span>R$230,00</span></div>
-      <div class="produto">12 Bermudas de Basquete <span>R$150,00</span></div>
-      <div class="produto">12 Calças de Moletom de Treino <span>R$400,00</span></div>
-      <div class="produto">Conjunto Toji <span>R$1200,00</span></div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=T%C3%AAnis+1" alt="Tênis de Basquete 1">
+        <h3>Tênis de Basquete Bounce 24</h3>
+        <p>R$ 299,00</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=T%C3%AAnis+2" alt="Tênis de Basquete 2">
+        <h3>Tênis Triton Air Jump 5000</h3>
+        <p>R$ 277,50</p>
+        <a href="#">Comprar</a>
+      </div>
     </div>
-  </section>
 
-  <!-- Categoria: Stewart / Street -->
-  <section>
-    <h2>Categoria: Stewart / Street</h2>
+    <h2>Casacos Esportivos</h2>
     <div class="produtos">
-      <div class="produto">12 Camisas Cargo <span>R$500,00</span></div>
-      <div class="produto">12 Camisas Longas <span>R$200,00</span></div>
-      <div class="produto">12 Camisas Skatistas <span>R$400,00</span></div>
-      <div class="produto">12 Tênis Qix <span>R$100,00</span></div>
-      <div class="produto">12 Tênis Nike SB <span>R$346,00</span></div>
-      <div class="produto">12 Bermudas Cargo <span>R$500,00</span></div>
-      <div class="produto">12 Conjuntos Street <span>R$500,00</span></div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Casaco+Esportivo+1" alt="Casaco Esportivo 1">
+        <h3>Casaco Texturizado com Capuz</h3>
+        <p>Blusão esportivo, com capuz, zíper e bolso canguru – ideal para treino e academia.</p>
+        <p>R$ 249,90</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Casaco+Esportivo+2" alt="Casaco Esportivo 2">
+        <h3>Jaqueta Corta-Vento Masculina</h3>
+        <p>Jaqueta leve, corta‑vento, com capuz e zíper – ótima para corrida/academia.</p>
+        <p>R$ 179,90</p>
+        <a href="#">Comprar</a>
+      </div>
     </div>
-  </section>
 
-  <!-- Categoria: Tênis de Basquete -->
-  <section>
-    <h2>Categoria: Tênis de Basquete</h2>
+    <h2>Camisas de Time</h2>
     <div class="produtos">
-      <div class="produto">Tênis de Basquete <span>R$100,00</span></div>
-      <div class="produto">12 Tênis Kobe 6 <span>R$1500,00</span></div>
-      <div class="produto">12 Tênis MB 4 <span>R$1190,00</span></div>
-      <div class="produto">12 Tênis Ja 3 <span>R$789,00</span></div>
-      <div class="produto">12 Tênis Precision Nike <span>R$356,00</span></div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Camisa+1" alt="Camisa de Time 1">
+        <h3>Nike Corinthians II 25/26</h3>
+        <p>R$ 332,49</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Camisa+2" alt="Camisa de Time 2">
+        <h3>Adidas Flamengo I 25/26</h3>
+        <p>R$ 379,99</p>
+        <a href="#">Comprar</a>
+      </div>
     </div>
-  </section>
 
-  <!-- Categoria: Futsal -->
-  <section>
-    <h2>Categoria: Chuteiras / Futsal</h2>
-    <div class="produtos">
-      <div class="produto">12 Chuteiras Mercurial <span>R$1000,00</span></div>
-      <div class="produto">12 Top Chuteiras <span>R$700,00</span></div>
-      <div class="produto">12 Tênis Futsal Adidas <span>Sem preço</span></div>
+    <!-- Avaliações -->
+    <div class="avaliacoes">
+      <h2>Avaliações dos Clientes</h2>
+      <div class="avaliacao">
+        <strong>Maria S.</strong> – ★★★★☆<br>
+        "O casaco é leve e confortável para treinos ao ar livre."
+      </div>
+      <div class="avaliacao">
+        <strong>João P.</strong> – ★★★★★<br>
+        "A jaqueta foi excelente para corridas matinais, corta‑vento e ainda estilosa."
+      </div>
+      <div class="avaliacao">
+        <strong>Fernanda R.</strong> – ★★★★☆<br>
+        "Adorei o bolso canguru e o capuz, super prático!"
+      </div>
     </div>
-  </section>
 
-  <!-- Categoria: Skates -->
-  <section>
-    <h2>Categoria: Skates</h2>
-    <div class="produtos">
-      <div class="produto">12 Skates Montados <span>R$900,00</span></div>
-      <div class="produto">12 Skates Monta na Hora <span>R$1052,40</span></div>
+    <!-- Parcerias -->
+    <div class="parcerias">
+      <h2>Parcerias & Marcas</h2>
+      <img src="nike.svg" alt="Nike">
+      <img src="adidas.svg" alt="Adidas">
+      <img src="puma.svg" alt="Puma">
+      <img src="oakley.svg" alt="Oakley">
+      <p>Trabalhamos com grandes marcas para trazer produtos autênticos e de qualidade.</p>
     </div>
-  </section>
+  </div>
 
+  <footer>
+    <p>&copy; 2025 Vaizser Z. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
-

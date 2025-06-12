@@ -1,7 +1,7 @@
 from main import app
 from flask import render_template
 from flask import Flask, render_template
-p.route("/")
+@app.route("/")
 def homepage():
     return render_template("homepage.html")
 
@@ -11,5 +11,4 @@ def blog():
 
 @app.route("/catalogo")
 def catalogo():
-    return 
-render_template('catalogo_completo.html')
+    return  render_template('catalogo.html')
