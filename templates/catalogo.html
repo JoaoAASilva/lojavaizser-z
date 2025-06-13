@@ -34,6 +34,15 @@
       width: 220px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .produto img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 6px;
     }
     .produto span {
       display: block;
@@ -83,24 +92,35 @@
     <h2>Categoria: Tênis de Basquete</h2>
     <div class="produtos">
       <div class="produto">
-        <img src="{{url_for('static',filename='tenis-de-basquete-24-outler-vivazz_1.webp')}}" alt="">
-        Tênis de Basquete <span>R$100,00</span></div>
+         <img src="{{ url_for('static', filename='tenis-de-basquete-24-outler-vivazz_1.webp') }}" alt="Tênis de Basquete">
+        Tênis de Basquete <span>R$100,00</span>
+      </div>
       <div class="produto">
-        <img src="{{url_for('static',filename= '')}}"
-        12 Tênis Kobe 6 <span>R$1500,00</span></div>
-      <div class="produto">12 Tênis MB 4 <span>R$1190,00</span></div>
-      <div class="produto">12 Tênis Ja 3 <span>R$789,00</span></div>
-      <div class="produto">12 Tênis Precision Nike <span>R$356,00</span></div>
+         <img src="{{ url_for('static', filename='kobe-6-protro-all-star-2025-6 (1).webp') }}" alt="Tênis Kobe 6">
+        12 Tênis Kobe 6 <span>R$1500,00</span>
+      </div>
+      <div class="produto">
+          <img src="{{ url_for('static', filename = '5811dd5a59bf9a00d9761549463fdcddaf2fea63f17a67d9f93e7158f57c79fb141461.jpg') }}" alt="Tênis MB 4">
+        12 Tênis MB 4 <span>R$1190,00</span>
+      </div>
+      <div class="produto">
+         <img src="{{ url_for('static', filename='nike-ja-3-max-volume-2025-1024x1024.webp') }}" alt="Tênis Ja 3">
+        12 Tênis Ja 3 <span>R$789,00</span>
+      </div>
+      <div class="produto">
+         <img src="{{ url_for('static', filename= 'tenis-nike-precision-vi-masculino-preto-e-branco-bef73da865547d1aa489124e0b6b5115.jpg') }}" alt="Tênis Precision Nike">
+        12 Tênis Precision Nike <span>R$356,00</span>
+      </div>
     </div>
   </section>
 
-  <!-- Categoria: Futsal -->
+  <!-- Categoria: Chuteiras / Futsal -->
   <section>
     <h2>Categoria: Chuteiras / Futsal</h2>
     <div class="produtos">
       <div class="produto">12 Chuteiras Mercurial <span>R$1000,00</span></div>
       <div class="produto">12 Top Chuteiras <span>R$700,00</span></div>
-      <div class="produto">12 Tênis Futsal Adidas <span>Sem preço</span></div>
+      <div class="produto">12 Tênis Futsal Adidas <span style="color: gray;">Preço sob consulta</span></div>
     </div>
   </section>
 

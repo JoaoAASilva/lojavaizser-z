@@ -12,3 +12,6 @@ def blog():
 @app.route("/catalogo")
 def catalogo():
     return  render_template('catalogo.html')
+@app.route("/cadastro")
+def cadastro():
+    return render_template('cadastro.html')
