@@ -83,107 +83,204 @@
       font-weight: bold;
       color: green;
     }
+
+    button.comprar {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.comprar:hover {
+      background-color: #333;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 6px;
+      margin: 6px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
 
-  <header>Loja Vaizer</header>
+<header>Loja Vaizer</header>
 
-  <nav>
-    <button onclick="abrirAba('catalogo')">Catálogo</button>
-    <button onclick="abrirAba('blog')">Blog</button>
-  </nav>
+<nav>
+  <button onclick="abrirAba('catalogo')">Catálogo</button>
+  <button onclick="abrirAba('avaliacao')">Avaliação</button>
+  <button onclick="abrirAba('login')">Login</button>
+</nav>
 
-  <!-- Catálogo -->
-  <div id="catalogo" class="aba ativa">
-    <h1>Catálogo de Produtos</h1>
+<!-- Catálogo -->
+<div id="catalogo" class="aba ativa">
+  <h1>Catálogo de Produtos</h1>
 
-    <section>
-      <h2>Categoria: Esporte</h2>
-      <div class="produtos">
-        <div class="produto">12 Camisetas de Basquete <span>R$300,00</span></div>
-        <div class="produto">12 Blusas de Futebol <span>R$300,00</span></div>
-        <div class="produto">12 Blusas de Futebol Americano <span>R$350,00</span></div>
-        <div class="produto">12 Blusas Dri FT <span>R$250,00</span></div>
-        <div class="produto">12 Camisetas Esportivas <span>R$400,00</span></div>
-        <div class="produto">12 Bermudas <span>R$150,00</span></div>
-        <div class="produto">12 Bermudas de Futebol <span>R$230,00</span></div>
-        <div class="produto">12 Bermudas de Basquete <span>R$150,00</span></div>
-        <div class="produto">12 Calças de Moletom de Treino <span>R$400,00</span></div>
-        <div class="produto">Conjunto Toji <span>R$1200,00</span></div>
+  <section>
+    <h2>Tênis de Basquete</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="static/kobe-6-protro-all-star-2025-6 (1).webp">
+        Tênis Kobe 6 <span>R$1500,00</span>
+        <button class="comprar">Comprar</button>
       </div>
-    </section>
-
-    <section>
-      <h2>Categoria: Stewart / Street</h2>
-      <div class="produtos">
-        <div class="produto">12 Camisas Cargo <span>R$500,00</span></div>
-        <div class="produto">12 Camisas Longas <span>R$200,00</span></div>
-        <div class="produto">12 Camisas Skatistas <span>R$400,00</span></div>
-        <div class="produto">12 Tênis Qix <span>R$100,00</span></div>
-        <div class="produto">12 Tênis Nike SB <span>R$346,00</span></div>
-        <div class="produto">12 Bermudas Cargo <span>R$500,00</span></div>
-        <div class="produto">12 Conjuntos Street <span>R$500,00</span></div>
+      <div class="produto">
+        <img src="static/nike-ja-3-max-volume-2025-1024x1024.webp">
+        Tênis Ja 3 <span>R$789,00</span>
+        <button class="comprar">Comprar</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Categoria: Tênis de Basquete</h2>
-      <div class="produtos">
-        <div class="produto">
-          <img src="static/tenis-de-basquete-24-outler-vivazz_1.webp" alt="Tênis de Basquete">
-          Tênis de Basquete <span>R$100,00</span>
-        </div>
-        <div class="produto">
-          <img src="static/kobe-6-protro-all-star-2025-6 (1).webp" alt="Tênis Kobe 6">
-          12 Tênis Kobe 6 <span>R$1500,00</span>
-        </div>
-        <div class="produto">
-          <img src="static/5811dd5a59bf9a00d9761549463fdcddaf2fea63f17a67d9f93e7158f57c79fb141461.jpg" alt="Tênis MB 4">
-          12 Tênis MB 4 <span>R$1190,00</span>
-        </div>
-        <div class="produto">
-          <img src="static/nike-ja-3-max-volume-2025-1024x1024.webp" alt="Tênis Ja 3">
-          12 Tênis Ja 3 <span>R$789,00</span>
-        </div>
-        <div class="produto">
-          <img src="static/tenis-nike-precision-vi-masculino-preto-e-branco-bef73da865547d1aa489124e0b6b5115.jpg" alt="Tênis Precision Nike">
-          12 Tênis Precision Nike <span>R$356,00</span>
-        </div>
-      </div>
-    </section>
+  <section>
+    <h2>Blusas de Times</h2>
+    <div class="produtos">
+      <div class="produto">12 Blusas de Basquete <span>R$300,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">12 Blusas de Futebol <span>R$300,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">12 Blusas de Vôlei <span>R$310,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">12 Blusas de Futebol Americano <span>R$350,00</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Categoria: Chuteiras / Futsal</h2>
-      <div class="produtos">
-        <div class="produto">12 Chuteiras Mercurial <span>R$1000,00</span></div>
-        <div class="produto">12 Top Chuteiras <span>R$700,00</span></div>
-        <div class="produto">12 Tênis Futsal Adidas <span style="color: gray;">Preço sob consulta</span></div>
-      </div>
-    </section>
+  <section>
+    <h2>Roupas de Academia</h2>
+    <div class="produtos">
+      <div class="produto">Conjunto Toji <span>R$1200,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Calças de Moletom Treino <span>R$400,00</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Categoria: Skates</h2>
-      <div class="produtos">
-        <div class="produto">12 Skates Montados <span>R$900,00</span></div>
-        <div class="produto">12 Skates Monta na Hora <span>R$1052,40</span></div>
-      </div>
-    </section>
-  </div>
+  <section>
+    <h2>Bicicleta / Skate</h2>
+    <div class="produtos">
+      <div class="produto">12 Skates Montados <span>R$900,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">12 Skates Personalizados <span>R$1052,40</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
 
-  <!-- Blog -->
-  <div id="blog" class="aba">
-    <h2>Blog da Loja Vaizer</h2>
-    <p>Seja bem-vindo ao nosso blog! Aqui você encontra novidades, dicas de moda e lançamentos exclusivos.</p>
-  </div>
+  <section>
+    <h2>Roupas e Tênis Skatistas</h2>
+    <div class="produtos">
+      <div class="produto">12 Camisas Skatistas <span>R$400,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Tênis Nike SB <span>R$346,00</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
 
-  <script>
-    function abrirAba(id) {
-      const abas = document.querySelectorAll('.aba');
-      abas.forEach(aba => aba.classList.remove('ativa'));
-      document.getElementById(id).classList.add('ativa');
-    }
-  </script>
+  <section>
+    <h2>Chuteiras</h2>
+    <div class="produtos">
+      <div class="produto">Chuteira Mercurial <span>R$1000,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Chuteira Adidas <span>R$700,00</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tênis Casuais</h2>
+    <div class="produtos">
+      <div class="produto">Tênis Branco Casual <span>R$320,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Tênis Preto Casual <span>R$290,00</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Linha Jordan</h2>
+    <div class="produtos">
+      <div class="produto">Jordan Retro 4 <span>R$1500,00</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Jordan Zion <span>R$890,00</span><button class="comprar">Comprar</button></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Patrocinadores</h2>
+    <div class="produtos">
+      <div class="produto">Nike <span>Oficial</span></div>
+      <div class="produto">Adidas <span>Oficial</span></div>
+      <div class="produto">Puma <span>Oficial</span></div>
+      <div class="produto">Mizuno <span>Oficial</span></div>
+      <div class="produto">All Star <span>Oficial</span></div>
+    </div>
+  </section>
+</div>
+
+<!-- Avaliação -->
+<div id="avaliacao" class="aba">
+  <h2>Avaliações da Loja Vaizer</h2>
+  <form id="formAvaliacao">
+    <label for="nome">Seu Nome:</label>
+    <input type="text" id="nome" required><br><br>
+    <label for="avaliacaoTexto">Sua Avaliação:</label><br>
+    <textarea id="avaliacaoTexto" rows="4" required></textarea><br><br>
+    <button type="submit">Enviar Avaliação</button>
+  </form>
+  <h3>Avaliações Recebidas:</h3>
+  <ul id="listaAvaliacoes"></ul>
+</div>
+
+<!-- Login -->
+<div id="login" class="aba">
+  <h2>Login</h2>
+  <form id="formLogin">
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" required><br><br>
+    <button type="submit">Entrar</button>
+  </form>
+  <p id="msgLogin"></p>
+</div>
+
+<script>
+  function abrirAba(id) {
+    const abas = document.querySelectorAll('.aba');
+    abas.forEach(aba => aba.classList.remove('ativa'));
+    document.getElementById(id).classList.add('ativa');
+  }
+
+  const formLogin = document.getElementById('formLogin');
+  const msgLogin = document.getElementById('msgLogin');
+
+  formLogin.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const usuario = document.getElementById('usuario').value;
+    localStorage.setItem('usuario', usuario);
+    msgLogin.textContent = `Bem-vindo, ${usuario}!`;
+  });
+
+  const formAvaliacao = document.getElementById('formAvaliacao');
+  const listaAvaliacoes = document.getElementById('listaAvaliacoes');
+
+  formAvaliacao.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const nome = document.getElementById('nome').value;
+    const texto = document.getElementById('avaliacaoTexto').value;
+
+    const avaliacao = { nome, texto };
+    let avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
+    avaliacoes.push(avaliacao);
+    localStorage.setItem('avaliacoes', JSON.stringify(avaliacoes));
+    carregarAvaliacoes();
+    formAvaliacao.reset();
+  });
+
+  function carregarAvaliacoes() {
+    const avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
+    listaAvaliacoes.innerHTML = '';
+    avaliacoes.forEach(av => {
+      const li = document.createElement('li');
+      li.textContent = `${av.nome}: ${av.texto}`;
+      listaAvaliacoes.appendChild(li);
+    });
+  }
+
+  window.onload = function () {
+    const usuarioSalvo = localStorage.getItem('usuario');
+    if (usuarioSalvo) msgLogin.textContent = `Bem-vindo de volta, ${usuarioSalvo}!`;
+    carregarAvaliacoes();
+  };
+</script>
 
 </body>
 </html>

@@ -2,136 +2,40 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo de Produtos</title>
+  <title>Catálogo com Imagens</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      background-color: #111;
-      color: #fff;
-      padding: 10px;
-    }
-    .produtos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+    body { font-family: Arial; background: #f6f6f6; padding: 20px; }
     .produto {
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 10px;
-      width: 220px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      text-align: center;
+      background: #fff; padding: 10px; margin: 10px;
+      border: 1px solid #ccc; border-radius: 8px; width: 220px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;
+      display: inline-block;
     }
-    .produto img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 10px;
-      border-radius: 6px;
+    img {
+      width: 100px; height: 100px; object-fit: cover;
+      border-radius: 6px; margin-bottom: 10px;
     }
-    .produto span {
-      display: block;
-      margin-top: 8px;
-      font-weight: bold;
-      color: green;
-    }
+    span { display: block; margin-top: 8px; font-weight: bold; color: green; }
   </style>
 </head>
 <body>
 
-  <h1>Catálogo de Produtos</h1>
+  <h1>Catálogo com Imagens</h1>
 
-  <!-- Categoria: Esporte -->
-  <section>
-    <h2>Categoria: Esporte</h2>
-    <div class="produtos">
-      <div class="produto">12 Camisetas de Basquete <span>R$300,00</span></div>
-      <div class="produto">12 Blusas de Futebol <span>R$300,00</span></div>
-      <div class="produto">12 Blusas de Futebol Americano <span>R$350,00</span></div>
-      <div class="produto">12 Blusas Dri FT <span>R$250,00</span></div>
-      <div class="produto">12 Camisetas Esportivas <span>R$400,00</span></div>
-      <div class="produto">12 Bermudas <span>R$150,00</span></div>
-      <div class="produto">12 Bermudas de Futebol <span>R$230,00</span></div>
-      <div class="produto">12 Bermudas de Basquete <span>R$150,00</span></div>
-      <div class="produto">12 Calças de Moletom de Treino <span>R$400,00</span></div>
-      <div class="produto">Conjunto Toji <span>R$1200,00</span></div>
-    </div>
-  </section>
+  <div class="produto">
+    <img src="static/kobe-6-protro-all-star-2025-6 (1).webp" alt="Kobe 6">
+    12 Tênis Kobe 6 <span>R$1500,00</span>
+  </div>
 
-  <!-- Categoria: Stewart / Street -->
-  <section>
-    <h2>Categoria: Stewart / Street</h2>
-    <div class="produtos">
-      <div class="produto">12 Camisas Cargo <span>R$500,00</span></div>
-      <div class="produto">12 Camisas Longas <span>R$200,00</span></div>
-      <div class="produto">12 Camisas Skatistas <span>R$400,00</span></div>
-      <div class="produto">12 Tênis Qix <span>R$100,00</span></div>
-      <div class="produto">12 Tênis Nike SB <span>R$346,00</span></div>
-      <div class="produto">12 Bermudas Cargo <span>R$500,00</span></div>
-      <div class="produto">12 Conjuntos Street <span>R$500,00</span></div>
-    </div>
-  </section>
+  <div class="produto">
+    <img src="static/nike-ja-3-max-volume-2025-1024x1024.webp" alt="Ja 3">
+    12 Tênis Ja 3 <span>R$789,00</span>
+  </div>
 
-  <!-- Categoria: Tênis de Basquete -->
-  <section>
-    <h2>Categoria: Tênis de Basquete</h2>
-    <div class="produtos">
-      <div class="produto">
-         <img src="{{ url_for('static', filename='tenis-de-basquete-24-outler-vivazz_1.webp') }}" alt="Tênis de Basquete">
-        Tênis de Basquete <span>R$100,00</span>
-      </div>
-      <div class="produto">
-         <img src="{{ url_for('static', filename='kobe-6-protro-all-star-2025-6 (1).webp') }}" alt="Tênis Kobe 6">
-        12 Tênis Kobe 6 <span>R$1500,00</span>
-      </div>
-      <div class="produto">
-          <img src="{{ url_for('static', filename = '5811dd5a59bf9a00d9761549463fdcddaf2fea63f17a67d9f93e7158f57c79fb141461.jpg') }}" alt="Tênis MB 4">
-        12 Tênis MB 4 <span>R$1190,00</span>
-      </div>
-      <div class="produto">
-         <img src="{{ url_for('static', filename='nike-ja-3-max-volume-2025-1024x1024.webp') }}" alt="Tênis Ja 3">
-        12 Tênis Ja 3 <span>R$789,00</span>
-      </div>
-      <div class="produto">
-         <img src="{{ url_for('static', filename= 'tenis-nike-precision-vi-masculino-preto-e-branco-bef73da865547d1aa489124e0b6b5115.jpg') }}" alt="Tênis Precision Nike">
-        12 Tênis Precision Nike <span>R$356,00</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Categoria: Chuteiras / Futsal -->
-  <section>
-    <h2>Categoria: Chuteiras / Futsal</h2>
-    <div class="produtos">
-      <div class="produto">12 Chuteiras Mercurial <span>R$1000,00</span></div>
-      <div class="produto">12 Top Chuteiras <span>R$700,00</span></div>
-      <div class="produto">12 Tênis Futsal Adidas <span style="color: gray;">Preço sob consulta</span></div>
-    </div>
-  </section>
-
-  <!-- Categoria: Skates -->
-  <section>
-    <h2>Categoria: Skates</h2>
-    <div class="produtos">
-      <div class="produto">12 Skates Montados <span>R$900,00</span></div>
-      <div class="produto">12 Skates Monta na Hora <span>R$1052,40</span></div>
-    </div>
-  </section>
+  <div class="produto">
+    <img src="static/tenis-nike-precision-vi-masculino-preto-e-branco-bef73da865547d1aa489124e0b6b5115.jpg" alt="Precision">
+    12 Tênis Precision Nike <span>R$356,00</span>
+  </div>
 
 </body>
 </html>
