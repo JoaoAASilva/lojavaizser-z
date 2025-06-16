@@ -98,12 +98,19 @@
       background-color: #333;
     }
 
-    input[type="text"], textarea {
+    input[type="text"], input[type="password"], textarea {
       width: 100%;
       padding: 6px;
       margin: 6px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
+    }
+
+    #barraPesquisa {
+      width: 300px;
+      margin: 10px 0;
+      padding: 8px;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -120,101 +127,47 @@
 <!-- Catálogo -->
 <div id="catalogo" class="aba ativa">
   <h1>Catálogo de Produtos</h1>
+  <input type="text" id="barraPesquisa" placeholder="Pesquisar produto..." onkeyup="pesquisarProduto()">
 
   <section>
     <h2>Tênis de Basquete</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="static/kobe-6-protro-all-star-2025-6 (1).webp">
-        Tênis Kobe 6 <span>R$1500,00</span>
-        <button class="comprar">Comprar</button>
-      </div>
-      <div class="produto">
-        <img src="static/nike-ja-3-max-volume-2025-1024x1024.webp">
-        Tênis Ja 3 <span>R$789,00</span>
-        <button class="comprar">Comprar</button>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Blusas de Times</h2>
-    <div class="produtos">
-      <div class="produto">12 Blusas de Basquete <span>R$300,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">12 Blusas de Futebol <span>R$300,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">12 Blusas de Vôlei <span>R$310,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">12 Blusas de Futebol Americano <span>R$350,00</span><button class="comprar">Comprar</button></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Roupas de Academia</h2>
-    <div class="produtos">
-      <div class="produto">Conjunto Toji <span>R$1200,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">Calças de Moletom Treino <span>R$400,00</span><button class="comprar">Comprar</button></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Bicicleta / Skate</h2>
-    <div class="produtos">
-      <div class="produto">12 Skates Montados <span>R$900,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">12 Skates Personalizados <span>R$1052,40</span><button class="comprar">Comprar</button></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Roupas e Tênis Skatistas</h2>
-    <div class="produtos">
-      <div class="produto">12 Camisas Skatistas <span>R$400,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">Tênis Nike SB <span>R$346,00</span><button class="comprar">Comprar</button></div>
+    <div class="produtos" id="produtosBasquete">
+      <div class="produto">Tênis Kobe 6<span>R$1500</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Tênis Ja 3<span>R$789</span><button class="comprar">Comprar</button></div>
     </div>
   </section>
 
   <section>
     <h2>Chuteiras</h2>
-    <div class="produtos">
-      <div class="produto">Chuteira Mercurial <span>R$1000,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">Chuteira Adidas <span>R$700,00</span><button class="comprar">Comprar</button></div>
+    <div class="produtos" id="produtosChuteira">
+      <div class="produto">Chuteira Mercurial<span>R$1000</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Chuteira Adidas<span>R$700</span><button class="comprar">Comprar</button></div>
     </div>
   </section>
 
   <section>
     <h2>Tênis Casuais</h2>
-    <div class="produtos">
-      <div class="produto">Tênis Branco Casual <span>R$320,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">Tênis Preto Casual <span>R$290,00</span><button class="comprar">Comprar</button></div>
+    <div class="produtos" id="produtosCasual">
+      <div class="produto">Tênis Branco Casual<span>R$320</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Tênis Preto Casual<span>R$290</span><button class="comprar">Comprar</button></div>
     </div>
   </section>
 
   <section>
     <h2>Linha Jordan</h2>
-    <div class="produtos">
-      <div class="produto">Jordan Retro 4 <span>R$1500,00</span><button class="comprar">Comprar</button></div>
-      <div class="produto">Jordan Zion <span>R$890,00</span><button class="comprar">Comprar</button></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Patrocinadores</h2>
-    <div class="produtos">
-      <div class="produto">Nike <span>Oficial</span></div>
-      <div class="produto">Adidas <span>Oficial</span></div>
-      <div class="produto">Puma <span>Oficial</span></div>
-      <div class="produto">Mizuno <span>Oficial</span></div>
-      <div class="produto">All Star <span>Oficial</span></div>
+    <div class="produtos" id="produtosJordan">
+      <div class="produto">Jordan Retro 4<span>R$1500</span><button class="comprar">Comprar</button></div>
+      <div class="produto">Jordan Zion<span>R$890</span><button class="comprar">Comprar</button></div>
     </div>
   </section>
 </div>
 
 <!-- Avaliação -->
 <div id="avaliacao" class="aba">
-  <h2>Avaliações da Loja Vaizer</h2>
+  <h2>Avaliações da Loja</h2>
   <form id="formAvaliacao">
-    <label for="nome">Seu Nome:</label>
-    <input type="text" id="nome" required><br><br>
-    <label for="avaliacaoTexto">Sua Avaliação:</label><br>
-    <textarea id="avaliacaoTexto" rows="4" required></textarea><br><br>
+    <input type="text" id="nome" placeholder="Seu nome" required><br>
+    <textarea id="avaliacaoTexto" rows="4" placeholder="Deixe sua avaliação" required></textarea><br>
     <button type="submit">Enviar Avaliação</button>
   </form>
   <h3>Avaliações Recebidas:</h3>
@@ -225,8 +178,8 @@
 <div id="login" class="aba">
   <h2>Login</h2>
   <form id="formLogin">
-    <label for="usuario">Usuário:</label>
-    <input type="text" id="usuario" required><br><br>
+    <input type="text" id="usuario" placeholder="Usuário" required><br>
+    <input type="password" id="senha" placeholder="Senha" required><br>
     <button type="submit">Entrar</button>
   </form>
   <p id="msgLogin"></p>
@@ -239,16 +192,24 @@
     document.getElementById(id).classList.add('ativa');
   }
 
+  // Login
   const formLogin = document.getElementById('formLogin');
   const msgLogin = document.getElementById('msgLogin');
 
   formLogin.addEventListener('submit', function (e) {
     e.preventDefault();
     const usuario = document.getElementById('usuario').value;
-    localStorage.setItem('usuario', usuario);
-    msgLogin.textContent = `Bem-vindo, ${usuario}!`;
+    const senha = document.getElementById('senha').value;
+
+    if (usuario && senha) {
+      localStorage.setItem('usuario', usuario);
+      msgLogin.textContent = `Bem-vindo(a), ${usuario}!`;
+    } else {
+      msgLogin.textContent = 'Preencha todos os campos.';
+    }
   });
 
+  // Avaliação
   const formAvaliacao = document.getElementById('formAvaliacao');
   const listaAvaliacoes = document.getElementById('listaAvaliacoes');
 
@@ -272,6 +233,16 @@
       const li = document.createElement('li');
       li.textContent = `${av.nome}: ${av.texto}`;
       listaAvaliacoes.appendChild(li);
+    });
+  }
+
+  // Pesquisa
+  function pesquisarProduto() {
+    const termo = document.getElementById('barraPesquisa').value.toLowerCase();
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+      const nome = produto.textContent.toLowerCase();
+      produto.style.display = nome.includes(termo) ? 'block' : 'none';
     });
   }
 
