@@ -15,3 +15,6 @@ def catalogo():
 @app.route("/cadastro")
 def cadastro():
     return render_template('cadastro.html')
+@app.route("/produtos")
+def produtos():
+    return render_template('produtos.html')
